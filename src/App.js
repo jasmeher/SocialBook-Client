@@ -17,11 +17,12 @@ function App() {
   const mode = useSelector((state) => state.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   const isAuth = !!useSelector((state) => state.token);
+
   return (
     <div className="app">
       <Router>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
+          <CssBaseline enableColorScheme />
           <Routes>
             <Route path="/" element={<Login />} />
             <Route

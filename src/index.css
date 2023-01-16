@@ -8,3 +8,23 @@ body,
   height: 100%;
   font-family: "Rubik", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b3b3b3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 94, 94);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
